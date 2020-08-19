@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import propTypes from 'prop-types'
+import { Link } from 'react-router-dom';
+import propTypes from 'prop-types';
 
 
 export default function Button(props) {
@@ -63,13 +63,13 @@ export default function Button(props) {
     }
   }
   return (
-    <Button
+    <button
       className={className.join(" ")}
       style={props.style}
       onClick={onClick}
     >
       {props.children}
-    </Button>
+    </button>
   )
 }
 Button.propTypes = {
@@ -79,6 +79,7 @@ Button.propTypes = {
   target: propTypes.string,
   className: propTypes.string,
   isDisabled: propTypes.bool,
+  isPrimary: propTypes.bool,
   isLoading: propTypes.bool,
   isSmall: propTypes.bool,
   isLarge: propTypes.bool,
