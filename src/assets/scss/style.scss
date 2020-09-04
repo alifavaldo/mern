@@ -104,6 +104,9 @@ section{
   width: 100%;
 }
 .card{
+  &.bordered{
+    border: 1px solid $gray-200;
+  }
   .tag{
     z-index: 3;
     font-size: 0.875rem;
@@ -224,5 +227,12 @@ footer{
     margin: 50px 0;
     font-weight: 300;
     color: $gray-500;
+  }
+}
+
+main{
+  p{
+    color: $gray-500 ;
+    font-weight: 300; 
   }
 }
