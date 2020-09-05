@@ -11,7 +11,7 @@ export default function Text(props) {
     append,
     prepend,
     outerClassName,
-    inputClassNamae,
+    inputClassName,
     errorResponse,
   } = props;
 
@@ -51,7 +51,7 @@ export default function Text(props) {
           name={name}
           type={type}
           pattern={pattern}
-          className={["from-control", inputClassName].join(" ")}
+          className={["form-control", inputClassName].join(" ")}
           value={value}
           placeholder={placeholder}
           onChange={onChange}
